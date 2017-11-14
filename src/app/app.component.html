@@ -1,0 +1,226 @@
+<header>
+
+  <div class="container">
+
+    <div id="logo"></div>
+
+  </div>
+  <!-- .container -->
+
+</header>
+
+<main>
+
+
+
+
+
+
+
+
+
+  <section id="have_car">
+
+    <div class="container">
+
+      <h1>TENHO CARRO</h1>
+
+      <div class="first step">
+        <img src="assets/lp/car_ads.png" alt="" />
+        <div class="number">1</div>
+        <div class="title">
+          ADESIVE SEU
+          <BR/> CARRO
+        </div>
+      </div>
+      <!-- .first .step -->
+
+      <div class="second step">
+        <div class="number">2</div>
+        <div class="title">
+          GANHE POR TEMPO
+          <BR/>E KILOMETRAGEM
+        </div>
+        <img src="assets/lp/map_route.png" alt="" />
+      </div>
+      <!-- .second .step -->
+
+      <div class="buttons">
+
+        <a class="btn" href="javascript:void(0);" (click)="toggleRegisterActive()">ADESIVAR</a>
+
+      </div>
+      <!-- .buttons -->
+
+    </div>
+    <!-- .container -->
+
+  </section>
+  <!-- #have_car -->
+
+
+
+
+
+
+
+
+  <div class="container">
+
+    <section id="example">
+
+      <img class="car" src="assets/lp/car_example002.png" alt="" />
+      <div>
+        <div class="title">UBER / 99 POP / TAXI / RENDA EXTRA</div>
+        <div class="buttons">
+          <a class="btn" href="javascript:void(0);" (click)="toggleRegisterActive()">CADASTRAR</a>
+        </div>
+        <!-- .buttons -->
+      </div>
+      <img class="emoji" src="assets/lp/emoji_money.png" alt="$$$" />
+
+    </section>
+    <!-- #example -->
+
+  </div>
+  <!-- .container -->
+
+
+
+
+
+
+
+  <section id="have_ads">
+
+    <div class="container">
+
+      <h1>TENHO ANÚNCIO</h1>
+
+      <div class="first step">
+        <img src="assets/lp/car_ads_open.png" alt="" />
+        <div class="number">1</div>
+        <div class="title">
+          MONTE SEU
+          <BR/> ANÚNCIO
+        </div>
+      </div>
+      <!-- .first .step -->
+
+      <div class="second step">
+        <div class="number">2</div>
+        <div class="title">
+          DEFINA
+          <BR/>PREFERÊNCIAS
+        </div>
+        <img src="assets/lp/map_pointer.png" alt="" />
+      </div>
+      <!-- .second .step -->
+
+      <div class="third step">
+        <img src="assets/lp/car_followers.png" alt="" />
+        <div class="number">3</div>
+        <div class="title">
+          SEJA VISTO
+          <BR/>POR TODO MUNDO
+        </div>
+      </div>
+      <!-- .first .step -->
+
+      <div class="buttons">
+        <a class="btn" href="javascript:void(0);" (click)="toggleRegisterActive()">ANUNCIAR</a>
+      </div>
+      <!-- .buttons -->
+
+    </div>
+    <!-- .container -->
+
+  </section>
+  <!-- #have_ads -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id="advertisers">
+
+    <div class="container">
+
+      <h1>ANUNCIANTES</h1>
+
+      <div class="brands">
+
+        <img src="assets/lp/brands/mrv.png" alt="" />
+        <img src="assets/lp/brands/unimed.png" alt="" />
+        <img src="assets/lp/brands/soluti.png" alt="" />
+        <img src="assets/lp/brands/dominos.png" alt="" />
+        <img src="assets/lp/brands/villa-mix.png" alt="" />
+        <img src="assets/lp/brands/fast-acai.png" alt="" />
+
+      </div>
+      <!-- .brands -->
+
+    </div>
+    <!-- .container -->
+
+  </section>
+  <!-- #advertisers -->
+
+</main>
+
+
+
+
+<footer>
+
+  <div class="container">
+
+    <div class="options">
+
+      <img src="assets/lp/logo_white.png" alt="ADScar" />
+
+      <div class="nav">
+        <ul>
+          <li>
+            <a href="javascript:void(0)" (click)="toggleRegisterActive()">- TENHO ANÚNCIO</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" (click)="toggleRegisterActive()">- TENHO CARRO</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="javascript:void(0)" (click)="toggleRegisterActive()">- TERMOS DE USO</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" (click)="toggleRegisterActive()">- CONTATO</a>
+          </li>
+        </ul>
+      </div>
+      <!-- .nav -->
+
+      <a class="facebook" href="javascript:void(0)">
+        <img src="assets/lp/facebook.png" alt="facebook" />
+      </a>
+
+    </div>
+    <!-- .options -->
+
+    <div class="sub">
+      ADcar - 2018
+    </div>
+    <!-- .sub -->
+
+  </div>
+  <!-- .container -->
+
+</footer>
+
+<app-register *ngIf="isRegisterActive" [open]="isRegisterActive" (close)="onCloseModal($event)"></app-register>

@@ -1,0 +1,168 @@
+header {
+  margin: 50px 0;
+}
+
+section { 
+  margin-bottom: 50px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+
+  @media (max-width: 1179px)  {
+    flex-direction: column-reverse;
+  }
+
+  .number {
+    @extend .gradient_text;
+    font-family: 'Archivo Black', sans-serif;   
+    font-weight: bold;    
+    font-size: 5em;
+    margin: 0 50px;
+  }
+
+  .title {
+    font-size: 2em;
+    color: $primary;
+  }
+
+}
+
+.buttons {
+  text-align: center;
+  padding: 60px 0;
+
+  a {
+    @extend .gradient_text;
+    font-weight: normal;
+    display: inline-block;
+    padding: 20px 45px;
+    border: 1px solid $secondary;
+    border-radius: 8px;
+    font-size: 1.8em;
+    transition: 0.4s all;
+
+    &:hover {
+      @extend .gradient_box;
+      -webkit-text-fill-color: white;
+      border-color: white;
+    }
+
+    &.disabled {
+      background: $secondary;
+      color: white;
+      -webkit-text-fill-color: white;
+      border-color: white;
+      cursor: default;
+    }
+  }
+
+}
+
+section#have_ads {
+  
+  .second {
+    justify-content: flex-end;
+  }
+
+}
+// section#have_ads
+
+
+section#example {
+  border: 1px solid $secondary;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1px;
+  margin-bottom: 100px;
+
+  @media (max-width: 1179px)  {
+    flex-direction: column;
+  }
+
+  .buttons {
+    padding: 20px 0 0 0;
+
+    a {
+      font-size: 1.0em;
+      padding: 15px 30px;
+    }
+  }
+
+  .title {
+    @extend .gradient_text;
+    font-size: 1.4em;
+    text-align: center;
+  }
+  
+  @media (min-width: 1180px)  {
+    .emoji {
+      margin-right: 40px;
+    }
+  }
+
+}
+// section#example
+
+
+section#advertisers {
+
+  .brands {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 1179px)  {
+      flex-direction: column;
+    }
+  }
+
+}
+// section#brands
+
+
+footer {
+  @extend .gradient_box;
+  padding: 40px 0 20px;
+
+  .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    @media (max-width: 1179px)  {
+      flex-direction: column;
+    }
+  }
+
+  .nav {
+    display: flex;
+
+    ul {
+      list-style: none;
+
+      a { 
+        font-size: 0.8em;
+        color: white; 
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .facebook {
+    width: 280px;
+    text-align: center;
+  }
+
+  .sub {
+    color: white;
+    font-size: 0.8em;
+    text-align: center;
+  }
+}

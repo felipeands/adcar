@@ -2,9 +2,21 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  templateUrl: './app.component.html'
 })
+
 export class AppComponent {
-  title = 'app';
+
+  public isRegisterActive: boolean;
+
+  toggleRegisterActive() {
+    this.isRegisterActive = !this.isRegisterActive;
+  }
+
+  onCloseModal(ev) {
+    this.toggleRegisterActive();
+  }
+
 }
+
+

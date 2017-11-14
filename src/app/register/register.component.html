@@ -1,0 +1,39 @@
+<div class="overlay">
+
+  <form #registerForm="ngForm" (ngSubmit)="onFormSubmit(registerForm)">
+
+    <a class="close" href="javascript:void(0)" (click)="onClose()">FECHAR</a>
+
+    <h1>Cadastro</h1>
+
+    <p>Obrigado por se cadastrar.</p>
+    <p>Após a análise você receberá um convite para acessar e indicar amigos.
+    </p>
+
+    <div class="field">
+      <input type="text" #name name="name" ngModel placeholder="Nome" />
+    </div>
+
+    <div class="field">
+      <input type="email" #email="ngModel" name="email" ngModel placeholder="Email" />
+    </div>
+
+    <div class="field">
+      <input type="text" #phone="ngModel" name="phone" ngModel placeholder="Telefone" />
+    </div>
+
+    <div class="field">
+      <input type="text" #how="ngModel" name="how" ngModel placeholder="Como conheceu a Adcar?" />
+    </div>
+
+    <div class="buttons">
+      <a class="btn" [class.disabled]="isFormSubmited" href="javascript:void(0);" (click)="onFormSubmit(registerForm)">
+        <span *ngIf="!isFormSubmited">ENVIAR</span>
+        <span *ngIf="isFormSubmited && !isFormSent">AGUARDE</span>
+        <span *ngIf="isFormSubmited && isFormSent">PRONTO!</span>
+      </a>
+    </div>
+
+  </form>
+
+</div>
